@@ -1,0 +1,37 @@
+{
+  "name": "@netless/appliance-auto-draw-plugin",
+  "version": "0.0.1-beta.0",
+  "files": [
+    "dist"
+  ],
+  "repository": "netless-io/appliance-auto-draw-plugin",
+  "homepage": "https://github.com/netless-io/appliance-auto-draw-plugin#readme",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "unpkg": "./dist/index.iife.js",
+  "jsdelivr": "./dist/index.iife.js",
+  "scripts": {
+    "dev": "vite --force",
+    "types": "tsc --emitDeclarationOnly",
+    "build": "cross-env NODE_ENV=production tsc && vite build --config vite.config.js && yarn types",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.24.7",
+    "@babel/preset-env": "^7.24.7",
+    "@rollup/plugin-babel": "^6.0.4",
+    "cross-env": "^7.0.3",
+    "typescript": "^5.2.2",
+    "vite": "^5.0.0"
+  },
+  "peerDependencies": {
+    "@netless/appliance-plugin": "1.1.7-beta.0"
+  },
+  "dependencies": {
+    "@netless/appliance-plugin": "1.1.7-beta.0"
+  },
+  "description": "",
+  "author": "hqer",
+  "license": "ISC"
+}
